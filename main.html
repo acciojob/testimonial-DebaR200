@@ -6,63 +6,75 @@
     <title>Testimonials</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+            font-family: serif;
+            margin: 40px;
             background-color: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
+            position: relative;
         }
-        h2 {
-            font-size: 2.5rem;
+
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #ffffff;
+        }
+
+        h1 {
+            font-size: 2.5em;
             font-weight: bold;
-            color: #333;
+            color: #000;
             margin-bottom: 20px;
         }
-        .testimonial-card {
-            background-color: #f9f9f9;
-            border: 1px solid #e0e0e0;
+
+        .testimonial-box {
+            position: relative;
+            background-color: #f5f5f5;
+            border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 6px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
         }
-        .testimonial-text {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-            flex-grow: 1;
+
+        .quote {
+            font-style: normal;
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #333;
+            width: 80%; 
+            position: relative;
+            left: 0;
+            top: 0;
         }
-        .testimonial-author {
+
+        .author {
             font-style: italic;
-            font-weight: bold;
-            color: #777;
-            text-align: right;
-            margin-left: 20px;
+            font-size: 1em;
+            color: #555;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h2>Testimonials</h2>
-        
-        <div class="testimonial-card">
-            <p class="testimonial-text">This product is amazing! I highly recommend it to anyone in need of a solution like this.</p>
-            <p class="testimonial-author">- John Doe</p>
-        </div>
+<div class="container">
+    <h1>Testimonials</h1>
 
-        <div class="testimonial-card">
-            <p class="testimonial-text">I have been using this for a few weeks now and it has completely transformed my workflow.</p>
-            <p class="testimonial-author">- Jane Smith</p>
-        </div>
+    <div class="testimonial-box">
+        <p class="quote">
+            This product is amazing! I highly recommend it to anyone in need of a solution like this.
+        </p>
+        <p class="author">- John Doe</p>
     </div>
+
+    <div class="testimonial-box">
+        <p class="quote">
+            I have been using this for a few weeks now and it has completely transformed my workflow.
+        </p>
+        <p class="author">- Jane Smith</p>
+    </div>
+</div>
 
 </body>
 </html>
